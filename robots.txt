@@ -1,0 +1,85 @@
+User-agent: *
+Allow: /
+
+# Uncomment the below and change to reference you sitemap
+#Sitemap: http://example.com/sitemap.xml
+
+# Lets disallow stuff that could go wrong
+Disallow: /.htaccess
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-content/plugins/wysija-newsletters/
+Disallow: /wp-includes/
+Disallow: /tmp/
+Disallow: */xmlrpc.php
+Disallow: /wp-
+Disallow: */wp-*.php
+Disallow: */trackback/
+Disallow: *?wptheme=
+Disallow: *?comments=
+Disallow: *?replytocom
+Disallow: */comments
+Disallow: /cgi-bin
+Disallow: *.php$
+Disallow: *.js$
+Disallow: *.inc$
+Disallow: *.css$
+Disallow: *.gz$
+Disallow: *.zip$
+Disallow: *.tar$
+Disallow: *.wmv$
+Disallow: *.cgi$
+Disallow: *.xhtml$
+Disallow: */wp-*
+Disallow: */feed/*
+Disallow: *.js$
+Disallow: *.inc$
+Disallow: *.exe
+
+Disallow: *.xml
+Disallow: *.xds
+Disallow: *.xls
+
+# add your sitemap.xml if Google cannot access the URL (test using Google's Web Master Tools)
+Allow: /browserconfig.xml
+Allow: /crossdomain.xml
+Allow: /labels.rd
+Allow: /trafficbasedsspsitemap.xml
+Allow: /BingSiteAuth.xml
+Allow: /sitemap.xml
+Allow: /*sitemap*.xml
+Allow: /google*.html
+Allow: *.html*
+
+Allow: /favicon.ico
+Allow: *.jpg
+Allow: *.JPG
+Allow: *.png
+Allow: *.PNG
+Allow: *.gif
+Allow: *.GIF
+Allow: *.txt
+
+Disallow: /readme.html
+Disallow: /license.txt
+
+Allow: /wp-content/uploads/
+Allow: /wp-content/themes/
+Allow: /wp-content/cache/
+Allow: /wp-includes/js/
+Allow: /wp-includes/images/
+Allow: /robots.txt
+
+Disallow: /wp-content/uploads/*.php
+Disallow: /wp-content/themes/*.php
+Disallow: /wp-content/cache/*.php
+Disallow: /*.*.php
+
+
+
+Allow: /wp-login.php
+Allow:  /xmlrpc.php
+
+Allow: *?page=* 
+
+ 
