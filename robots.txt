@@ -40,6 +40,7 @@ Disallow: *.xml
 Disallow: *.xds
 Disallow: *.xls
 
+# Lets now allow stuff 
 # add your sitemap.xml if Google cannot access the URL (test using Google's Web Master Tools)
 Allow: /browserconfig.xml
 Allow: /crossdomain.xml
@@ -48,6 +49,14 @@ Allow: /trafficbasedsspsitemap.xml
 Allow: /BingSiteAuth.xml
 Allow: /sitemap.xml
 Allow: /*sitemap*.xml
+Allow: /*category*.xml
+Allow: /*page*.xml
+Allow: /*posts*.xml
+Allow: /*mods*.xml
+Allow: /*portfolio*.xml
+Allow: /*slide*.xml
+Allow: /*site*.xml
+Allow: /*taxonomy*.xml
 Allow: /google*.html
 Allow: *.html*
 
