@@ -40,23 +40,26 @@ Disallow: *.xml
 Disallow: *.xds
 Disallow: *.xls
 
-# Lets now allow stuff 
-# add your sitemap.xml if Google cannot access the URL (test using Google's Web Master Tools)
 Allow: /browserconfig.xml
 Allow: /crossdomain.xml
 Allow: /labels.rd
 Allow: /trafficbasedsspsitemap.xml
 Allow: /BingSiteAuth.xml
 Allow: /sitemap.xml
-Allow: /*sitemap*.xml
-Allow: /*category*.xml
-Allow: /*page*.xml
-Allow: /*posts*.xml
-Allow: /*mods*.xml
-Allow: /*portfolio*.xml
-Allow: /*slide*.xml
-Allow: /*site*.xml
-Allow: /*taxonomy*.xml
+Allow: /sitemap*.xml
+Allow: /category*.xml
+Allow: /page*.xml
+Allow: /post.xml
+Allow: /posts.xml
+Allow: /post_featured_item.xml
+Allow: /post_product.xml
+Allow: /post_blocks.xml
+Allow: /mods.xml
+Allow: /portfolio*.xml
+Allow: /slide.xml
+Allow: /site.xml
+Allow: /taxonomy.xml
+Allow: /sitemapindex.xml
 Allow: /google*.html
 Allow: *.html*
 
@@ -84,11 +87,17 @@ Disallow: /wp-content/themes/*.php
 Disallow: /wp-content/cache/*.php
 Disallow: /*.*.php
 
-
-
 Allow: /wp-login.php
-Allow:  /xmlrpc.php
+Allow: /xmlrpc.php
+Allow: /wp-admin/admin.php
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-admin/load-styles.php
+Allow: /wp-admin/load-scripts.php
+Allow: /wp-admin/about.php
+Allow: /wp-admin/media-new.php
+Allow: /wp-admin/post-new.php
+Allow: /wp-admin/page.php
+Allow: /wp-admin/themes.php
+Allow: /wp-admin/profile.php
 
 Allow: *?page=* 
-
- 
