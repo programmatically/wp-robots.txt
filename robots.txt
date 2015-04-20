@@ -1,3 +1,97 @@
+User-agent: *
+Allow: /
+
+# Uncomment the below and change to reference you sitemap
+#Sitemap: http://example.com/sitemap.xml
+
+# Lets disallow stuff that could go wrong
+
+Disallow: /.htaccess
+
+Disallow: /cgi-bin
+
+Disallow: /readme.html
+
+Disallow: /license.txt
+
+Disallow: /wp-admin/
+
+Disallow: /wp-content/
+
+Allow: /wp-content/uploads/
+
+Allow: /wp-content/plugins/
+Disallow: /wp-content/plugins/wysija-newsletters/
+Disallow: /wp-content/uploads/
+
+Allow: /wp-content/themes/
+
+Allow: /wp-content/cache/
+
+Disallow: /wp-includes/
+Allow: /wp-includes/js/
+Allow: /wp-includes/images/
+
+Disallow: */wp-*
+Disallow: */feed/*
+Disallow: /tmp/
+Disallow: */comments
+Disallow: */trackback/
+
+Disallow: */xmlrpc.php
+Disallow: /wp-
+Disallow: */wp-*.php
+Disallow: *?wptheme=
+Disallow: *?comments=
+Disallow: *?replytocom
+Disallow: *.cgi
+Disallow: *.exe
+Disallow: *.xds
+Disallow: *.xls
+Disallow: *.inc$
+Disallow: *.inc*?*
+Disallow: *.css$
+Disallow: *.css*?*
+Disallow: *.wmv$
+Disallow: *.wmv*?*
+Disallow: *.gif$
+Disallow: *.gif*?*
+Disallow: *.jpg$
+Disallow: *.jpg*?*
+Disallow: *.png$
+Disallow: *.png*?*
+Disallow: *.bmp$
+Disallow: *.bmp*?*
+Disallow: *.wmv$
+Disallow: *.wmv*?*
+Disallow: *.tar*?*
+Disallow: *.tar$
+Disallow: *.gz*?*
+Disallow: *.gz$
+Disallow: *.zip*?*
+Disallow: *.zip$
+Disallow: *.xml*?*
+Disallow: *.xhtml$
+
+Disallow: *.phtml
+Disallow: *.php
+Disallow: *.php*
+Allow: *php.?page=*
+Allow: /wp-login.php
+Allow: /wp-admin/admin.php
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-admin/load-styles.php
+Allow: /wp-admin/load-scripts.php
+Allow: /wp-admin/about.php
+Allow: /wp-admin/media-new.php
+Allow: /wp-admin/post-new.php
+Allow: /wp-admin/page.php
+Allow: /wp-admin/themes.php
+Allow: /wp-admin/profile.php
+
+#required for updates
+Allow: /xmlrpc.php
+
 
 # Internet Archiver Wayback Machine
 #User-agent: ia_archiver
