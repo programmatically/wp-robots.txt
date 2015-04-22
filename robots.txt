@@ -1,97 +1,119 @@
+#Robots.txt wont keep hackers out. A bot is not forced to read it. It is only used by nice bots.
+
 User-agent: *
+
+#Crawl-delay: 5
+
 Allow: /
+Disallow: *.*
 
 # Uncomment the below and change to reference you sitemap
-#Sitemap: http://example.com/sitemap.xml
+Sitemap: http://motivationalspeakers4u.co.uk/sitemapindex.xml
 
 # Lets disallow stuff that could go wrong
 
 Disallow: /.htaccess
 
-Disallow: /cgi-bin
-
-Disallow: /readme.html
-
-Disallow: /license.txt
-
-Disallow: /wp-admin/
-
-Disallow: /wp-content/
-
-Allow: /wp-content/uploads/
-
-Allow: /wp-content/plugins/
-Disallow: /wp-content/plugins/wysija-newsletters/
-Disallow: /wp-content/uploads/
-
-Allow: /wp-content/themes/
-
-Allow: /wp-content/cache/
-
-Disallow: /wp-includes/
-Allow: /wp-includes/js/
-Allow: /wp-includes/images/
+Disallow: /cgi-bin/$
 
 Disallow: */wp-*
-Disallow: */feed/*
-Disallow: /tmp/
-Disallow: */comments
-Disallow: */trackback/
 
-Disallow: */xmlrpc.php
-Disallow: /wp-
-Disallow: */wp-*.php
+Disallow: /wp-content/$
+Allow: /wp-content/uploads/$
+Allow: /wp-content/plugins/$
+Disallow: /wp-content/plugins/wysija-newsletters/$
+Disallow: /wp-content/uploads/$
+
+Allow: /wp-content/themes/$
+
+Allow: /wp-content/cache/$
+
+Disallow: /wp-includes/$
+Allow: /wp-includes/js/$
+Allow: /wp-includes/images/$
+
+Disallow: */feed/$
+Disallow: /tmp/$
+Disallow: */comments
+Disallow: */trackback/$
+Disallow: */recomended/$
+Disallow: /wp-*
+Disallow: /wp-admin/$
 Disallow: *?wptheme=
 Disallow: *?comments=
 Disallow: *?replytocom
-Disallow: *.cgi
-Disallow: *.exe
-Disallow: *.xds
-Disallow: *.xls
-Disallow: *.inc$
-Disallow: *.inc*?*
-Disallow: *.css$
-Disallow: *.css*?*
-Disallow: *.wmv$
-Disallow: *.wmv*?*
-Disallow: *.gif$
-Disallow: *.gif*?*
-Disallow: *.jpg$
-Disallow: *.jpg*?*
-Disallow: *.png$
-Disallow: *.png*?*
-Disallow: *.bmp$
-Disallow: *.bmp*?*
-Disallow: *.wmv$
-Disallow: *.wmv*?*
-Disallow: *.tar*?*
-Disallow: *.tar$
-Disallow: *.gz*?*
-Disallow: *.gz$
-Disallow: *.zip*?*
-Disallow: *.zip$
-Disallow: *.xml*?*
-Disallow: *.xhtml$
 
-Disallow: *.phtml
-Disallow: *.php
-Disallow: *.php*
-Allow: *php.?page=*
+#should already be disallowed
+#Disallow: *.cgi
+#Disallow: *.exe
+#Disallow: *.xds
+#Disallow: *.xls
+#Disallow: *.bmp
+#Disallow: *.xhtml
+
+Allow: *.css$
+Allow: *.js$
+Allow: *.html$
+Allow: *.htm$
+Allow: *.doc$
+Allow: *.docx$
+Allow: *.xls$
+Allow: *.xlt$
+Allow: *.xlsx$
+Allow: *.pp$
+Allow: *.sldx$
+Allow: *.pub$
+Allow: *.inc$
+Allow: *.wmv$
+Allow: *.gif$
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.pdf$
+Allow: *.png$
+Allow: *.wmv$
+Allow: *.tar$
+Allow: *.gz$
+Allow: *.tar$
+Allow: *.gz.tar$
+Allow: *.zip$
+Allow: *.xml$
+
+Disallow: /readme.html
+Disallow: /license.txt
+
+#needed to protect .php in the folders above, but has to be here to stop hacks such as jpg.php
+Disallow: .php$
+Disallow: *.*.php$
+
+######
+# ALLOW STUFF THROUGH
+######
+
+Allow: /wp-cron.php
+Allow: /wp-feed.php
 Allow: /wp-login.php
-Allow: /wp-admin/admin.php
-Allow: /wp-admin/admin-ajax.php
-Allow: /wp-admin/load-styles.php
-Allow: /wp-admin/load-scripts.php
-Allow: /wp-admin/about.php
-Allow: /wp-admin/media-new.php
-Allow: /wp-admin/post-new.php
-Allow: /wp-admin/page.php
-Allow: /wp-admin/themes.php
-Allow: /wp-admin/profile.php
-
-#required for updates
 Allow: /xmlrpc.php
+Allow: /index.php
 
+Allow: /wp-admin/$
+#Allow: /wp-admin/admin.php
+#Allow: /wp-admin/admin-ajax.php
+#Allow: /wp-admin/load-styles.php
+#Allow: /wp-admin/load-scripts.php
+#Allow: /wp-admin/about.php
+#Allow: /wp-admin/media-new.php
+#Allow: /wp-admin/post-new.php
+#Allow: /wp-admin/page.php
+#Allow: /wp-admin/themes.php
+#Allow: /wp-admin/profile.php
+#Allow: /wp-admin/update-core.php
+
+# disallow urls starting with quote
+Disallow: /"
+
+######
+#DISALOW BOTS (not really needed but helps)
+######
 
 # Internet Archiver Wayback Machine
 #User-agent: ia_archiver
@@ -344,9 +366,6 @@ User-agent:  Mass\ Downloader
 Disallow: /
 
 User-agent:  Memo
-Disallow: /
-
-User-agent:  Microsoft.URL
 Disallow: /
 
 User-agent:  MIDown\ tool
