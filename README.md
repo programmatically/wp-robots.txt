@@ -9,7 +9,8 @@ WordPress robots.txt
 * Friendly to Goolgle and MSN Bots etc
 
 Installation:
-*FTP to your top level WordPress directory (where readme.txt is).
+
+* FTP to your top level WordPress directory (where readme.txt is).
 * Alternatively you can use a WP Robots.txt plugin to copy and paste the content into.
 
 
